@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islar Mobile Blocks | on‑site block molding – Lagos/Ogun</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter + Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #fcfcfc;
+      color: #1e2b37;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #e67e22;
+      color: white;
+      font-weight: 600;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      border: 2px solid transparent;
+      box-shadow: 0 8px 18px rgba(230, 126, 34, 0.15);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #e67e22;
+      transform: translateY(-3px);
+    }
+
+    .btn:hover {
+      background-color: #cf6d17;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px rgba(230, 126, 34, 0.25);
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+      position: relative;
+      padding-bottom: 0.75rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 90px;
+      height: 4px;
+      background: #e67e22;
+      border-radius: 4px;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #4a5f73;
+      margin-bottom: 2.5rem;
+      font-weight: 400;
+    }
+
+    /* HEADER with flair */
+    .header {
+      background: white;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.02), 0 2px 0 #e67e2240;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0.6rem 0;
+      border-bottom: 3px solid #e67e22;
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+      position: relative;
+      padding-left: 1rem;
+    }
+    .logo::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      height: 45px;
+      width: 5px;
+      background: #e67e22;
+      border-radius: 10px;
+    }
+    .logo-main {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #1e2b37;
+      letter-spacing: -0.5px;
+    }
+    .logo-main span {
+      color: #e67e22;
+      font-weight: 700;
+      background: #e67e2215;
+      padding: 0 8px 0 4px;
+      border-radius: 30px 8px 8px 30px;
+      margin-left: 5px;
+    }
+    .logo-sub {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #4a5f73;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: -5px;
+    }
+    .logo-sub i {
+      color: #e67e22;
+      margin-right: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.3rem;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2c3e50;
+      transition: color 0.2s;
+      font-size: 1.05rem;
+      position: relative;
+    }
+    .nav-links a:hover {
+      color: #e67e22;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #e67e22;
+      transition: 0.3s;
+      transform: translateX(-50%);
+    }
+    .nav-links a:hover::after {
+      width: 70%;
+    }
+    .nav-links .contact-btn {
+      background: #e67e22;
+      color: white;
+      padding: 0.6rem 1.8rem;
+      border-radius: 40px;
+      box-shadow: 0 4px 12px #e67e2260;
+    }
+    .nav-links .contact-btn:hover {
+      background: #cf6d17;
+      color: white;
+    }
+    .nav-links .contact-btn::after {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #2c3e50;
+    }
+    .mobile-menu-toggle { display: none; }
+
+    /* HERO SECTION with background image */
+    .hero {
+      position: relative;
+      background-image: url('images/hero-image.jpg'); /* local image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 5rem 0 6rem;
+      color: white;
+      isolation: isolate;
+    }
+
+    /* dark overlay for calm readability */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* calm semi-transparent overlay */
+      z-index: 1;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1 1 400px;
+    }
+
+    .hero-badge {
+      background: rgba(230, 126, 34, 0.9);
+      color: white;
+      padding: 0.4rem 1.4rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      border-left: 5px solid white;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      line-height: 1.2;
+      color: white;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .hero-highlight {
+      color: #e67e22;
+      background: rgba(255,255,255,0.2);
+      padding: 0 0.3rem;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.95);
+      max-width: 550px;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    /* remove separate image div — now it's background */
+    /* .hero-image is not used */
+
+    /* features */
+    .features {
+      padding: 3rem 0;
+      background: white;
+    }
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #f0f5fa;
+      padding: 1.3rem 2rem;
+      border-radius: 60px;
+      flex: 1 1 200px;
+      border-left: 5px solid #e67e22;
+    }
+    .feature-item i {
+      font-size: 2rem;
+      color: #e67e22;
+    }
+
+    /* services */
+    .services {
+      padding: 5rem 0;
+      background: #f9fbfd;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      background: white;
+      border-radius: 30px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.03);
+      transition: all 0.3s ease;
+      border: 1px solid #dee7ef;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 40px rgba(230, 126, 34, 0.1);
+      border-color: #e67e22;
+    }
+    .service-icon {
+      background: #e67e2215;
+      width: 70px;
+      height: 70px;
+      border-radius: 30px 30px 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.8rem;
+    }
+    .service-icon i {
+      font-size: 2.4rem;
+      color: #e67e22;
+    }
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+    }
+
+    /* process */
+    .process {
+      padding: 5rem 0;
+      background: white;
+    }
+    .process-steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+    .step {
+      flex: 1 1 160px;
+      text-align: center;
+      position: relative;
+    }
+    .step:not(:last-child)::after {
+      content: "➡️";
+      position: absolute;
+      right: -25px;
+      top: 25px;
+      font-size: 2rem;
+      color: #e67e22;
+      opacity: 0.6;
+    }
+    .step-circle {
+      background: #2c3e50;
+      color: white;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 auto 1.5rem;
+      border: 4px solid #e67e22;
+    }
+
+    /* gallery - using local paths */
+    .gallery {
+      padding: 5rem 0;
+      background: #f0f4f8;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.8rem;
+      margin-top: 2.5rem;
+    }
+    .gallery-item {
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+      transition: 0.3s;
+      aspect-ratio: 4 / 3;
+      position: relative;
+      border: 2px solid white;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+      display: block;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, #1e2b37dd);
+      color: white;
+      padding: 1.5rem 1rem 0.8rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-shadow: 0 2px 5px black;
+    }
+
+    /* contact */
+    .contact {
+      padding: 5rem 0;
+      background: white;
+    }
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      background: #f2f6f9;
+      border-radius: 50px;
+      padding: 3rem;
+      margin-top: 2rem;
+    }
+    .contact-info {
+      flex: 1 1 280px;
+    }
+    .contact-info h3 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+    .contact-detail {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+    }
+    .contact-detail i {
+      background: #e67e22;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .contact-detail a {
+      color: #1e2b37;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-whatsapp i {
+      background: #25D366;
+    }
+    .contact-form {
+      flex: 2 1 350px;
+      background: white;
+      border-radius: 40px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 1rem 1.2rem;
+      border: 1px solid #dee7ef;
+      border-radius: 30px;
+      font-family: inherit;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: #e67e22;
+      box-shadow: 0 0 0 4px #e67e2215;
+    }
+    .form-btn {
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1.1rem;
+    }
+    .form-btn:hover {
+      background: #1e2b37;
+    }
+
+    .footer {
+      background: #1e2b37;
+      color: #d0deeb;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .footer a {
+      color: #e67e22;
+      text-decoration: none;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 10px 25px #25D36660;
+      z-index: 99;
+      transition: 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background: #20ba5a;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .hero-content h1 { font-size: 2.5rem; }
+      .step:not(:last-child)::after { display: none; }
+    }
+    @media (max-width: 600px) {
+      .section-title { font-size: 1.9rem; }
+      .hero { padding: 3rem 0; }
+    }
+    .mobile-menu-toggle:checked ~ .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <div class="logo-main">ISLAR<span>mobile</span></div>
+      <div class="logo-sub"><i class="fas fa-truck"></i> ON‑SITE BLOCK MOLDING</div>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle">
+    <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="contact-btn">Request quote</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION with background image -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge"><i class="fas fa-map-marker-alt"></i>  Serving Lagos / Ogun State</span>
+      <h1>We bring the <span class="hero-highlight">block factory</span> to your site</h1>
+      <p><strong>On‑site molding</strong> – hollow, solid, interlocking & fancy blocks. Sand, granite, cement & labor supplied. No minimum order.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/2347033777219?text=I'm%20interested%20in%20your%20mobile%20block%20service" class="btn"><i class="fab fa-whatsapp"></i>  WhatsApp MD</a>
+        <a href="tel:+2347033777219" class="btn btn-outline"><i class="fas fa-phone-alt"></i>  Call now</a>
+      </div>
+    </div>
+    <!-- no separate image div – background handles it -->
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item"><i class="fas fa-cubes"></i> <h4>All block types</h4></div>
+      <div class="feature-item"><i class="fas fa-truck"></i> <h4>Sand & cement</h4></div>
+      <div class="feature-item"><i class="fas fa-hard-hat"></i> <h4>Labor available</h4></div>
+      <div class="feature-item"><i class="fas fa-infinity"></i> <h4>No minimum order</h4></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">blocks & building materials</h2>
+    <div class="section-subtitle">Made with quality granite/sand – on your site or delivered</div>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon"><i class="fas fa-cube"></i></div><h3>Solid & hollow</h3><p>6", 9" solid blocks, hollow blocks of all sizes. Load‑bearing.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-puzzle-piece"></i></div><h3>Interlocking</h3><p>Perfect for pavement, fences & foundations – no mortar needed.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-gem"></i></div><h3>Fancy blocks</h3><p>Decorative screen blocks, textured finishes for modern architecture.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-truck-loading"></i></div><h3>Sand / granite / cement</h3><p>We supply sharp sand, granite (all sizes), and quality cement.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <div class="container">
+    <h2 class="section-title">how it works</h2>
+    <div class="section-subtitle">from request to blocks on your site</div>
+    <div class="process-steps">
+      <div class="step"><div class="step-circle">1</div><h4>Call / WhatsApp</h4><p>Tell us quantity, block type, and sand preference.</p></div>
+      <div class="step"><div class="step-circle">2</div><h4>Part payment</h4><p>Secure order with deposit (paid directly to MD).</p></div>
+      <div class="step"><div class="step-circle">3</div><h4>We mobilize</h4><p>Machine & team arrive at your site (or we deliver).</p></div>
+      <div class="step"><div class="step-circle">4</div><h4>Molding & curing</h4><p>Blocks produced on‑the‑spot with your materials.</p></div>
+    </div>
+    <p style="text-align: center; margin-top: 3rem; background: #eef3f8; padding: 1rem; border-radius: 100px;"><i class="fas fa-map-pin" style="color: #e67e22;"></i>  We are mobile — we mold at your site, or deliver if you prefer.</p>
+  </div>
+</section>
+
+<!-- gallery with LOCAL image paths -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2 class="section-title">real project shots & materials</h2>
+    <div class="section-subtitle">actual site photos – blocks, sands, machines</div>
+    <div class="gallery-grid">
+      <!-- REPLACE THESE with your actual image files -->
+      <div class="gallery-item"><img src="images/solid-blocks.jpg" alt="stacked solid blocks"><span class="gallery-caption">9″ solid blocks</span></div>
+      <div class="gallery-item"><img src="images/hollow-blocks.jpg" alt="hollow blocks on site"><span class="gallery-caption">6″ hollow blocks</span></div>
+      <div class="gallery-item"><img src="images/interlocking.jpg" alt="interlocking pavers"><span class="gallery-caption">interlocking pavers</span></div>
+      <div class="gallery-item"><img src="images/sand-granite.jpg" alt="pile of sand and granite"><span class="gallery-caption">sharp sand / granite</span></div>
+      <div class="gallery-item"><img src="images/fancy-blocks.jpg" alt="fancy screen blocks"><span class="gallery-caption">fancy / screen blocks</span></div>
+      <div class="gallery-item"><img src="images/cement.jpg" alt="cement bags"><span class="gallery-caption">cement supply</span></div>
+      <div class="gallery-item"><img src="images/machine.jpg" alt="mobile block machine"><span class="gallery-caption">mobile machine on site</span></div>
+      <div class="gallery-item"><img src="images/worker.jpg" alt="worker and blocks"><span class="gallery-caption">labour / on‑site team</span></div>
+    </div>
+    <p style="margin-top: 2rem; font-style: italic; color: #4a5f73;"><i class="fas fa-check-circle" style="color: #e67e22;"></i> we use accurate pictures of different sizes/types – contact us for specific samples.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">talk to the MD directly</h2>
+    <div class="section-subtitle">no chatbots – real conversation with the owner</div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Islar Mobile Blocks</h3>
+        <div class="contact-detail"><i class="fas fa-map-pin"></i> <span>13, Isaac Oshoba street, Ireopo Estate, Bakare Bostop, Ikotun‑Igando Road, Lagos</span></div>
+        <div class="contact-detail"><i class="fas fa-phone-alt"></i> <a href="tel:+2347033777219">07033777219</a></div>
+        <div class="contact-detail contact-whatsapp"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2347033777219">07033777219</a></div>
+        <div class="contact-detail"><i class="fas fa-hand-holding-usd"></i> <span>Part/full payment via bank or cash – handled by MD.</span></div>
+        <div style="margin-top: 2rem; background: #e67e2215; padding: 1.5rem; border-radius: 30px;">
+          <p><strong><i class="fas fa-map-marked-alt"></i> Areas served:</strong> Lagos State & Ogun State (Ajah, Ikorodu, Badagry, Abeokuta, Sagamu, etc.)</p>
+          <p><i class="fas fa-clock"></i>  Immediate response via call/WhatsApp.</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="margin-bottom: 1.5rem;">Quick order / inquiry</h3>
+        <p style="margin-bottom: 1.5rem;">Fill this and the MD will reach out directly.</p>
+        <!-- FORM SENDS TO WHATSAPP with details -->
+        <form id="quickForm" onsubmit="sendToWhatsApp(event)">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="Phone number" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="3" placeholder="Block type, quantity, site location..." required></textarea>
+          </div>
+          <button type="submit" class="form-btn"><i class="fab fa-whatsapp"></i>  Send to MD</button>
+        </form>
+        <p style="margin-top: 1rem; font-size: 0.9rem;"><i class="fas fa-lock"></i> we don't collect online payments – MD will discuss deposit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Islar Mobile Blocks — On‑site block molding Lagos/Ogun. Built for real construction.</p>
+    <p style="margin-top: 0.5rem;"><a href="#home">Home</a>  |  <a href="#services">Services</a>  |  <a href="#contact">Contact MD</a></p>
+  </div>
+</footer>
+
+<a href="https://wa.me/2347033777219?text=I'm%20interested%20in%20your%20mobile%20block%20service" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  // Function to send form details to WhatsApp
+  function sendToWhatsApp(event) {
+    event.preventDefault(); // Stop form from submitting normally
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+    
+    // Create the WhatsApp message
+    const whatsappMessage = `Hello, I'm ${name}. I want to make an inquiry about: ${message}. My phone number is ${phone}.`;
+    
+    // Encode for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // MD's WhatsApp number (same as provided)
+    const mdNumber = '2347033777219';
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${mdNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Optional: clear form
+    document.getElementById('quickForm').reset();
+  }
+
+  // Mobile menu toggle
+  (function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (menuToggle.checked) menuToggle.checked = false;
+      });
+    });
+  })();
+</script>
+</body>
+</html>
+
