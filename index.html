@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Islar Mobile Blocks | on‑site block molding – Lagos/Ogun</title>
+  <title>Islar Mobile Blocks | on‑site block moulding – Lagos/Ogun</title>
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts: Inter + Poppins -->
@@ -284,9 +284,6 @@
       flex-wrap: wrap;
     }
 
-    /* remove separate image div — now it's background */
-    /* .hero-image is not used */
-
     /* features */
     .features {
       padding: 3rem 0;
@@ -354,6 +351,19 @@
     .service-card h3 {
       font-size: 1.5rem;
       margin-bottom: 0.7rem;
+    }
+    .service-list {
+      margin-top: 0.8rem;
+      padding-left: 1.2rem;
+      font-size: 0.95rem;
+      color: #2c3e50;
+    }
+    .service-list li {
+      margin-bottom: 0.3rem;
+    }
+    .service-list i {
+      color: #e67e22;
+      width: 1.2rem;
     }
 
     /* process */
@@ -486,6 +496,9 @@
     .contact-whatsapp i {
       background: #25D366;
     }
+    .contact-email i {
+      background: #2c3e50;
+    }
     .contact-form {
       flex: 2 1 350px;
       background: white;
@@ -579,7 +592,7 @@
   <div class="container">
     <div class="logo">
       <div class="logo-main">ISLAR<span>mobile</span></div>
-      <div class="logo-sub"><i class="fas fa-truck"></i> ON‑SITE BLOCK MOLDING</div>
+      <div class="logo-sub"><i class="fas fa-truck"></i> ON‑SITE BLOCK MOULDING</div> <!-- British spelling -->
     </div>
     <input type="checkbox" id="menu-toggle" class="mobile-menu-toggle">
     <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
@@ -600,13 +613,12 @@
     <div class="hero-content">
       <span class="hero-badge"><i class="fas fa-map-marker-alt"></i>  Serving Lagos / Ogun State</span>
       <h1>We bring the <span class="hero-highlight">block factory</span> to your site</h1>
-      <p><strong>On‑site molding</strong> – hollow, solid, interlocking & fancy blocks. Sand, granite, cement & labor supplied. No minimum order.</p>
+      <p><strong>On‑site moulding</strong> – hollow, solid, interlocking, kerbs & fancy blocks. Sand, granite, cement & labour supplied. No minimum order.</p> <!-- British spelling -->
       <div class="hero-buttons">
         <a href="https://wa.me/2347033777219?text=I'm%20interested%20in%20your%20mobile%20block%20service" class="btn"><i class="fab fa-whatsapp"></i>  WhatsApp MD</a>
         <a href="tel:+2347033777219" class="btn btn-outline"><i class="fas fa-phone-alt"></i>  Call now</a>
       </div>
     </div>
-    <!-- no separate image div – background handles it -->
   </div>
 </section>
 
@@ -615,7 +627,7 @@
     <div class="features-grid">
       <div class="feature-item"><i class="fas fa-cubes"></i> <h4>All block types</h4></div>
       <div class="feature-item"><i class="fas fa-truck"></i> <h4>Sand & cement</h4></div>
-      <div class="feature-item"><i class="fas fa-hard-hat"></i> <h4>Labor available</h4></div>
+      <div class="feature-item"><i class="fas fa-hard-hat"></i> <h4>Labour available</h4></div>
       <div class="feature-item"><i class="fas fa-infinity"></i> <h4>No minimum order</h4></div>
     </div>
   </div>
@@ -626,10 +638,26 @@
     <h2 class="section-title">blocks & building materials</h2>
     <div class="section-subtitle">Made with quality granite/sand – on your site or delivered</div>
     <div class="services-grid">
-      <div class="service-card"><div class="service-icon"><i class="fas fa-cube"></i></div><h3>Solid & hollow</h3><p>6", 9" solid blocks, hollow blocks of all sizes. Load‑bearing.</p></div>
+      <!-- Solid & hollow card (updated to include kerbs hint) -->
+      <div class="service-card"><div class="service-icon"><i class="fas fa-cube"></i></div><h3>Solid & hollow</h3><p>6", 9" solid blocks, hollow blocks of all sizes. Load‑bearing. Also ask about <strong>kerbs</strong>.</p></div>
+      <!-- Interlocking card -->
       <div class="service-card"><div class="service-icon"><i class="fas fa-puzzle-piece"></i></div><h3>Interlocking</h3><p>Perfect for pavement, fences & foundations – no mortar needed.</p></div>
+      <!-- Fancy blocks card -->
       <div class="service-card"><div class="service-icon"><i class="fas fa-gem"></i></div><h3>Fancy blocks</h3><p>Decorative screen blocks, textured finishes for modern architecture.</p></div>
-      <div class="service-card"><div class="service-icon"><i class="fas fa-truck-loading"></i></div><h3>Sand / granite / cement</h3><p>We supply sharp sand, granite (all sizes), and quality cement.</p></div>
+      <!-- NEW KERBS/CURBS CARD -->
+      <div class="service-card"><div class="service-icon"><i class="fas fa-border-all"></i></div><h3>Kerbs & curbs</h3><p>Road kerbs, garden edging, drainage curbs – cast on‑site or delivered.</p></div>
+      <!-- SUPPLY CARD – detailed sand, granite, cement, labour (bullet style) -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-truck-loading"></i></div>
+        <h3>Materials & labour</h3>
+        <p><strong>Supply of:</strong></p>
+        <ul class="service-list">
+          <li><i class="fas fa-angle-right"></i> Sharp sand, filling sand, plastering sand</li>
+          <li><i class="fas fa-angle-right"></i> Granite: 3/4 down, 3/4 up, ½ inch, stone dust, stone base</li>
+          <li><i class="fas fa-angle-right"></i> Cement (quality brands)</li>
+          <li><i class="fas fa-angle-right"></i> Labour / on‑site team available</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -641,10 +669,10 @@
     <div class="process-steps">
       <div class="step"><div class="step-circle">1</div><h4>Call / WhatsApp</h4><p>Tell us quantity, block type, and sand preference.</p></div>
       <div class="step"><div class="step-circle">2</div><h4>Part payment</h4><p>Secure order with deposit (paid directly to MD).</p></div>
-      <div class="step"><div class="step-circle">3</div><h4>We mobilize</h4><p>Machine & team arrive at your site (or we deliver).</p></div>
-      <div class="step"><div class="step-circle">4</div><h4>Molding & curing</h4><p>Blocks produced on‑the‑spot with your materials.</p></div>
+      <div class="step"><div class="step-circle">3</div><h4>We mobilise</h4><p>Machine & team arrive at your site (or we deliver).</p></div>
+      <div class="step"><div class="step-circle">4</div><h4>Moulding & curing</h4><p>Blocks produced on‑the‑spot with your materials.</p></div> <!-- British spelling -->
     </div>
-    <p style="text-align: center; margin-top: 3rem; background: #eef3f8; padding: 1rem; border-radius: 100px;"><i class="fas fa-map-pin" style="color: #e67e22;"></i>  We are mobile — we mold at your site, or deliver if you prefer.</p>
+    <p style="text-align: center; margin-top: 3rem; background: #eef3f8; padding: 1rem; border-radius: 100px;"><i class="fas fa-map-pin" style="color: #e67e22;"></i>  We are mobile — we mould at your site, or deliver if you prefer.</p> <!-- British spelling -->
   </div>
 </section>
 
@@ -678,6 +706,8 @@
         <div class="contact-detail"><i class="fas fa-map-pin"></i> <span>13, Isaac Oshoba street, Ireopo Estate, Bakare Bostop, Ikotun‑Igando Road, Lagos</span></div>
         <div class="contact-detail"><i class="fas fa-phone-alt"></i> <a href="tel:+2347033777219">07033777219</a></div>
         <div class="contact-detail contact-whatsapp"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2347033777219">07033777219</a></div>
+        <!-- NEW EMAIL DETAIL -->
+        <div class="contact-detail contact-email"><i class="fas fa-envelope"></i> <a href="mailto:islamiaadeyemi88@gmail.com">islamiaadeyemi88@gmail.com</a></div>
         <div class="contact-detail"><i class="fas fa-hand-holding-usd"></i> <span>Part/full payment via bank or cash – handled by MD.</span></div>
         <div style="margin-top: 2rem; background: #e67e2215; padding: 1.5rem; border-radius: 30px;">
           <p><strong><i class="fas fa-map-marked-alt"></i> Areas served:</strong> Lagos State & Ogun State (Ajah, Ikorodu, Badagry, Abeokuta, Sagamu, etc.)</p>
@@ -708,7 +738,7 @@
 
 <footer class="footer">
   <div class="container">
-    <p>© 2025 Islar Mobile Blocks — On‑site block molding Lagos/Ogun. Built for real construction.</p>
+    <p>© 2025 Islar Mobile Blocks — On‑site block moulding Lagos/Ogun. Built for real construction.</p> <!-- British spelling -->
     <p style="margin-top: 0.5rem;"><a href="#home">Home</a>  |  <a href="#services">Services</a>  |  <a href="#contact">Contact MD</a></p>
   </div>
 </footer>
@@ -719,27 +749,27 @@
   // Function to send form details to WhatsApp
   function sendToWhatsApp(event) {
     event.preventDefault(); // Stop form from submitting normally
-    
+
     // Get form values
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const message = document.getElementById('message').value;
-    
+
     // Create the WhatsApp message
     const whatsappMessage = `Hello, I'm ${name}. I want to make an inquiry about: ${message}. My phone number is ${phone}.`;
-    
+
     // Encode for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    
+
     // MD's WhatsApp number (same as provided)
     const mdNumber = '2347033777219';
-    
+
     // Create WhatsApp URL
     const whatsappUrl = `https://wa.me/${mdNumber}?text=${encodedMessage}`;
-    
+
     // Open WhatsApp in new tab
     window.open(whatsappUrl, '_blank');
-    
+
     // Optional: clear form
     document.getElementById('quickForm').reset();
   }
@@ -757,4 +787,3 @@
 </script>
 </body>
 </html>
-
